@@ -8,7 +8,8 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+
+@interface ViewController () 
 
 @end
 
@@ -18,6 +19,21 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
+
+- (IBAction)addStarInfoPress:(id)sender {
+    if (_starName && _starAge) {
+        [self.delegate addStarInfoPress:self];
+    }else {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"重新輸入"
+                                                            message:nil
+                                                           delegate:self
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil, nil];
+        [alertView show];
+    }
+    
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

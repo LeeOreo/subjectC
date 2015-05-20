@@ -8,8 +8,22 @@
 
 #import <UIKit/UIKit.h>
 
+@class ViewController;
+// Protocol define
+@protocol starInfoDelegate <NSObject>
+@required
+- (void)addStarInfoPress:(ViewController *)viewcontroller;
+@end
+
+
+
+
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) id <starInfoDelegate> delegate;
+
+@property (strong, nonatomic) IBOutlet UITextField *starName;
+@property (strong, nonatomic) IBOutlet UITextField *starAge;
 
 @end
 

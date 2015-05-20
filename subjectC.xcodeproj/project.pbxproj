@@ -14,6 +14,9 @@
 		938C4A941B0C56DD0032FA97 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 938C4A931B0C56DD0032FA97 /* Images.xcassets */; };
 		938C4A971B0C56DD0032FA97 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 938C4A951B0C56DD0032FA97 /* LaunchScreen.xib */; };
 		938C4AA31B0C56DD0032FA97 /* subjectCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 938C4AA21B0C56DD0032FA97 /* subjectCTests.m */; };
+		938C4AB11B0C589C0032FA97 /* StarInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 938C4AB01B0C589C0032FA97 /* StarInfo.m */; };
+		938C4AB41B0C58C30032FA97 /* StarTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 938C4AB31B0C58C30032FA97 /* StarTableViewController.m */; };
+		938C4AB71B0C58DB0032FA97 /* StarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 938C4AB61B0C58DB0032FA97 /* StarTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		938C4A9C1B0C56DD0032FA97 /* subjectCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = subjectCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		938C4AA11B0C56DD0032FA97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		938C4AA21B0C56DD0032FA97 /* subjectCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = subjectCTests.m; sourceTree = "<group>"; };
+		938C4AAF1B0C589C0032FA97 /* StarInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarInfo.h; sourceTree = "<group>"; };
+		938C4AB01B0C589C0032FA97 /* StarInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarInfo.m; sourceTree = "<group>"; };
+		938C4AB21B0C58C30032FA97 /* StarTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarTableViewController.h; sourceTree = "<group>"; };
+		938C4AB31B0C58C30032FA97 /* StarTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarTableViewController.m; sourceTree = "<group>"; };
+		938C4AB51B0C58DB0032FA97 /* StarTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarTableViewCell.h; sourceTree = "<group>"; };
+		938C4AB61B0C58DB0032FA97 /* StarTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +90,9 @@
 		938C4A851B0C56DD0032FA97 /* subjectC */ = {
 			isa = PBXGroup;
 			children = (
+				938C4AAE1B0C58810032FA97 /* Object */,
+				938C4AAD1B0C58770032FA97 /* ViewController */,
+				938C4AAC1B0C586E0032FA97 /* View */,
 				938C4A8A1B0C56DD0032FA97 /* AppDelegate.h */,
 				938C4A8B1B0C56DD0032FA97 /* AppDelegate.m */,
 				938C4A8D1B0C56DD0032FA97 /* ViewController.h */,
@@ -117,6 +129,33 @@
 				938C4AA11B0C56DD0032FA97 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		938C4AAC1B0C586E0032FA97 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				938C4AB51B0C58DB0032FA97 /* StarTableViewCell.h */,
+				938C4AB61B0C58DB0032FA97 /* StarTableViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		938C4AAD1B0C58770032FA97 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				938C4AB21B0C58C30032FA97 /* StarTableViewController.h */,
+				938C4AB31B0C58C30032FA97 /* StarTableViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		938C4AAE1B0C58810032FA97 /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				938C4AAF1B0C589C0032FA97 /* StarInfo.h */,
+				938C4AB01B0C589C0032FA97 /* StarInfo.m */,
+			);
+			name = Object;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +202,7 @@
 		938C4A7B1B0C56DD0032FA97 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = C;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = ALPHACamp;
 				TargetAttributes = {
@@ -220,8 +260,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				938C4A8F1B0C56DD0032FA97 /* ViewController.m in Sources */,
+				938C4AB41B0C58C30032FA97 /* StarTableViewController.m in Sources */,
 				938C4A8C1B0C56DD0032FA97 /* AppDelegate.m in Sources */,
+				938C4AB71B0C58DB0032FA97 /* StarTableViewCell.m in Sources */,
 				938C4A891B0C56DD0032FA97 /* main.m in Sources */,
+				938C4AB11B0C589C0032FA97 /* StarInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +391,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = subjectC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -358,6 +402,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = subjectC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
